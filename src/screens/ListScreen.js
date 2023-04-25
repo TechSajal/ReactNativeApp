@@ -12,7 +12,7 @@
       {name:"Friend 7",age:43},
       {name:"Friend 8",age:23},
       {name:"Friend 9",age:59},
-      {name:"Friend 10",age:46}
+      {name:"Friend 10",age:46}  
    ]
     return (
       <View>
