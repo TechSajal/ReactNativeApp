@@ -5,9 +5,13 @@ const COLOR_INCREMENT = 15;
 // argument 1 -> state === {red:number,green:number,blue:number}
 // argument 2 -> action[how to change state object] === {colortochange:"reg" || "green" || "blue" , amount:15||-15}
 const reducer = (state,action) =>{
-    switch(action.colorToChange){
+    switch(action.colorToChange){ 
         case "red":
-            return {...state , red:state.red + action.amount}
+            if(state.red+action.amount >255 || state.red + action.amount <0){
+                return state;
+            }else{
+                return {...state , red:state.red + action.amount}
+            }
         case "green" :
             return {...state , green:state.green + action.amount}
         case "blue":
