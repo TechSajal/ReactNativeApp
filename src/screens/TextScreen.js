@@ -8,7 +8,7 @@ const squarescreen = () => {
         <Text>Enter Name:</Text>
         <TextInput
          autoCapitalize="none"
-         autoCorrect={false}
+         autoCorrect={false} 
          onChangeText={newvalue => setname(newvalue)}
          style={styles.input}/>
 
